@@ -269,12 +269,30 @@ html, body {
   margin-top: 20px;
   padding-left: 2px;
 }
-.location-row {
+.location-row, .school-row {
   font-family:'MahinRafid', sans-serif;
   font-size:14.5px; color:rgba(255,255,255,0.32);
   display:flex; align-items:center; gap:6px;
 }
 
+.school-row i{
+  font-size:12.5px;
+}
+
+.location-row{
+  font-size:22px;
+  /* font-weight: bold; */
+  color:rgba(212,175,55,0.65);
+  letter-spacing: .4px;
+}
+
+.location-row b{
+  letter-spacing: 1.1px;
+}
+
+.location-row i{
+  font-size:18px;
+}
 /* ════════════════════════════════════════════════
    FOOTER BAR — inside border
    Left: "Sponsored by" label + sponsor names
@@ -664,8 +682,8 @@ html, body {
             </svg>
             <span class="card-icon-label">তারিখ</span>
           </div>
-          <div class="card-value">২৩ রমজান ১৪৪৭</div>
-          <div class="card-sub">১৩ মার্চ ২০২৬</div>
+          <div class="card-value">২২ রমজান ১৪৪৭</div>
+          <div class="card-sub">১২ মার্চ ২০২৬</div>
         </div>
       </div>
 
@@ -690,11 +708,13 @@ html, body {
 
     <div class="social-row"> &nbsp; #SSC-26 &nbsp;×&nbsp; @SGSCian</div>
 
-    <div class="location-row">  &nbsp;
-      <svg width="11" height="14" viewBox="0 0 11 14" fill="rgba(212,175,55,0.45)">
-        <path d="M5.5 0C3.57 0 2 1.57 2 3.5 2 6.13 5.5 11.5 5.5 11.5S9 6.13 9 3.5C9 1.57 7.43 0 5.5 0zm0 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-      </svg>
+    <div class="school-row">  &nbsp;
+<i class="fa-solid fa-school"></i>
       সৈয়দপুর সরকারি বিজ্ঞান কলেজ, সৈয়দপর, নীলফামারী
+    </div>
+        <div class="location-row">
+<i class="fa-solid fa-location-dot"></i> 
+      <b> স্থান: </b> বন্ধন কনভেনশন হল
     </div>
 
   </div>
@@ -761,6 +781,7 @@ html, body {
     ctx.fillStyle='rgba(255,255,240,0.85)'; ctx.fill();
   }
 </script>
-<script src="https://muhtasim-rahman.github.io/exporter-pro/export.js"></script>
+<!-- <script src="https://muhtasim-rahman.github.io/exporter-pro/export.js"></script> -->
+<script src="./export.js"></script>
 </body>
 </html>
